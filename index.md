@@ -1,3 +1,3 @@
-I currently work on the High Level Design team in Toronto at Intel as an Design Engineer, working on Intel's OpenCL for FPGA Compiler and Intel's High Level Synthesis Compiler for FPGAs.
+I currently work on the High Level Design team in Toronto at Intel as Software Engineering manager, working on Intel's oneAPI, OpenCL, and HLS LLVM-compiler for FPGAs.
 
-Here's my [LinkedIn page](https://www.linkedin.com/in/ajaykumarkannan/)
+Here's my [LinkedIn page](https://www.linkedin.com/in/ajaykumarkannan/).
