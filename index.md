@@ -3,8 +3,6 @@ layout: default
 title: Ajay Kannan
 ---
 
-Here's my [LinkedIn page](https://www.linkedin.com/in/ajaykumarkannan/).
-
 ## Work Experience
 
 **Software Development Manager — Amazon Web Services (July 2025 – Present)**
