@@ -54,11 +54,38 @@ body {
   font-weight: 700;
   color: #f8fafc;
   letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.site-name:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .site-tagline {
   color: #64748b;
   font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 0.82rem;
+  margin-left: auto;
+}
+
+.header-nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.15s;
+}
+
+.header-nav a:hover,
+.header-nav a.active {
+  color: #f1f5f9;
 }
 
 .header-links {
@@ -66,7 +93,7 @@ body {
   align-items: center;
   gap: 6px;
   font-size: 0.8rem;
-  margin-left: auto;
+  margin-left: 24px;
 }
 
 .header-links a {
@@ -86,6 +113,33 @@ body {
 /* ── Content ── */
 .site-content {
   padding: 36px 0 64px;
+}
+
+/* ── Narrative prose ── */
+.prose {
+  max-width: 680px;
+  margin-bottom: 8px;
+}
+
+.prose p {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.prose a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.prose a:hover {
+  text-decoration: underline;
 }
 
 /* ── Sections ── */
@@ -197,9 +251,17 @@ a:hover {
 }
 
 /* ── Responsive ── */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .header-inner {
+    flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .header-nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    gap: 14px;
   }
 
   .header-links {

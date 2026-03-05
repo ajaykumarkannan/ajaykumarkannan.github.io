@@ -11,11 +11,18 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <img class="site-photo" src="{{ '/assets/images/ajay.jpg' | relative_url }}" alt="Ajay Kannan">
+      <a href="{{ '/' | relative_url }}">
+        <img class="site-photo" src="{{ '/assets/images/ajay.jpg' | relative_url }}" alt="Ajay Kannan">
+      </a>
       <div class="header-text">
-        <h1 class="site-name">Ajay Kannan</h1>
+        <a class="site-name" href="{{ '/' | relative_url }}">Ajay Kannan</a>
         <span class="site-tagline">Software Engineering Leader</span>
       </div>
+      <nav class="header-nav">
+        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>About</a>
+        <a href="{{ '/publications/' | relative_url }}" {% if page.url contains 'publications' %}class="active"{% endif %}>Publications</a>
+        <a href="{{ '/education/' | relative_url }}" {% if page.url contains 'education' %}class="active"{% endif %}>Education</a>
+      </nav>
       <div class="header-links">
         <a href="mailto:ajay@ajaykannan.ca">ajay@ajaykannan.ca</a>
         <span class="divider">·</span>
