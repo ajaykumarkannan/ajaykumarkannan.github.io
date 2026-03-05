@@ -14,22 +14,15 @@
       <a href="{{ '/' | relative_url }}">
         <img class="site-photo" src="{{ '/assets/images/ajay.jpg' | relative_url }}" alt="Ajay Kannan">
       </a>
-      <div class="header-text">
+      <div class="header-identity">
         <a class="site-name" href="{{ '/' | relative_url }}">Ajay Kannan</a>
-        <span class="site-tagline">Software Engineering Leader</span>
+        <span class="site-tagline">Software Engineering Leader &middot; Toronto</span>
       </div>
       <nav class="header-nav">
         <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>About</a>
         <a href="{{ '/publications/' | relative_url }}" {% if page.url contains 'publications' %}class="active"{% endif %}>Publications</a>
         <a href="{{ '/education/' | relative_url }}" {% if page.url contains 'education' %}class="active"{% endif %}>Education</a>
       </nav>
-      <div class="header-links">
-        <a href="mailto:ajay@ajaykannan.ca">ajay@ajaykannan.ca</a>
-        <span class="divider">·</span>
-        <a href="https://www.linkedin.com/in/ajaykumarkannan/" target="_blank" rel="noopener">LinkedIn</a>
-        <span class="divider">·</span>
-        <span>Toronto</span>
-      </div>
     </div>
   </header>
 
@@ -38,6 +31,16 @@
       {{ content }}
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-links">
+      <a href="mailto:ajay@ajaykannan.ca">ajay@ajaykannan.ca</a>
+      <span class="divider">·</span>
+      <a href="https://www.linkedin.com/in/ajaykumarkannan/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="divider">·</span>
+      <a href="https://scholar.google.com/citations?user=AfMnJREAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+  </footer>
 
 </body>
 </html>
